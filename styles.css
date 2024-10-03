@@ -1,73 +1,28 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-header {
-    background: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    position: relative;
-}
-
-.header-content {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    text-align: right;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-}
-
-.certification {
+.about-content {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin-top: 20px;
+    border: 1px solid #ccc; /* Optional: Add a border around the section */
+    padding: 20px; /* Padding for the section */
+    border-radius: 8px; /* Rounded corners */
 }
 
-.certification img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+.profile-image {
+    border-radius: 50%; /* Make the image round */
+    width: 150px; /* Adjust size */
+    height: 150px; /* Adjust size */
+    margin-right: 20px; /* Space between image and text */
 }
 
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #f1f1f1;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.about-text {
+    max-width: 600px; /* Limit text width for better readability */
 }
 
-/* Responsive styles */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
-    .certification {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.about-text h4 {
+    margin-top: 15px; /* Space between headings */
+    margin-bottom: 5px; /* Space below headings */
+}
+
+.about-text p {
+    margin-bottom: 15px; /* Space between paragraphs */
 }
