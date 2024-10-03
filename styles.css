@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    display: flex;
 }
 
 header {
@@ -10,31 +10,38 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    width: 100%;
 }
 
-nav {
+.sidebar {
+    width: 200px;
     background: #444;
     color: #fff;
+    padding: 1rem;
 }
 
-nav ul {
+.sidebar ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.sidebar ul li {
+    margin: 15px 0;
 }
 
-nav a {
+.sidebar a {
     color: #fff;
     text-decoration: none;
 }
 
+main {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
 section {
     padding: 1rem;
-    margin: 20px;
+    margin: 20px 0;
     border: 1px solid #ddd;
 }
 
@@ -74,8 +81,14 @@ footer {
 }
 
 @media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    header, footer {
+        text-align: center;
+    }
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    main {
+        padding: 0.5rem;
     }
 }
