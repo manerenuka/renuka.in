@@ -1,28 +1,81 @@
-.about-content {
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background: #444;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 1rem;
+    margin: 20px;
+    border: 1px solid #ddd;
+}
+
+.certification {
     display: flex;
     align-items: center;
-    margin-top: 20px;
-    border: 1px solid #ccc; /* Optional: Add a border around the section */
-    padding: 20px; /* Padding for the section */
-    border-radius: 8px; /* Rounded corners */
 }
 
-.profile-image {
-    border-radius: 50%; /* Make the image round */
-    width: 150px; /* Adjust size */
-    height: 150px; /* Adjust size */
-    margin-right: 20px; /* Space between image and text */
+.certification img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
-.about-text {
-    max-width: 600px; /* Limit text width for better readability */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.about-text h4 {
-    margin-top: 15px; /* Space between headings */
-    margin-bottom: 5px; /* Space below headings */
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
-.about-text p {
-    margin-bottom: 15px; /* Space between paragraphs */
+form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
