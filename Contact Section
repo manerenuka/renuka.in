@@ -1,0 +1,15 @@
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" action="your-backend-url" method="POST">
+        <label for="name">Renuka Mane:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">renukam157@gmail.com:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
